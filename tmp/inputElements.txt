@@ -1,0 +1,7 @@
+        //if (
+        //      (document.activeElement.className != "question_box") &&
+        //      (document.activeElement.className != "question_box light") &&
+        //      (document.activeElement.className != "qtext_editor_content qed_content")
+         //  )
+        //{
+

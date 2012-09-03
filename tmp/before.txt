@@ -1,0 +1,17 @@
+<form class="search_form" action="#" onsubmit="return false;" method="get" name="search_form">
+	<div class="search_input">
+	<div class="input_wrapper" id="__w2_inCSPYI_input_wrapper" style="background-color: rgb(255, 255, 255); ">
+		<span class="context" id="__w2_hNIAwIb_context" style=""></span>
+		<input class="question_box light" group="__w2_inCSPYI_interaction" placeholder="Search Questions, Boards, Topics and People" value="" autocomplete="off" maxlength="250" type="text" tabindex="1" w2cid="inCSPYI" id="__w2_inCSPYI_input" style="width: 463px; padding-right: 5px; ">
+		<a class="clear_navigator hidden" href="#" id="__w2_inCSPYI_clear">&nbsp;</a>
+	</div>
+	</div>
+	<span class="hidden">
+	<a href="#" id="__w2_HDjeylx_link">Add Question</a>
+	</span>
+</form>
+<div id="__w2_atuzYfQ_results_shell">
+	<div class="results_frame" id="__w2_haDyMwe_results_frame" style="display: none; ">
+		<ul id="__w2_haDyMwe_results_list"></ul>
+	</div>
+</div>
