@@ -24,10 +24,10 @@ function getUserDetails () {
 
 function makeHelpPage () {
 	var help_page=document.createElement("div");
-	help_page.setAttribute("id","quorak_shortcuts_help");
+	help_page.setAttribute("id","qvorak_shortcuts_help");
 	help_page.setAttribute("style","display: none");
-	help_page.innerHTML='	<div id="quorak_shortcuts_curtain"></div> \
-				<div id="quorak_shortcuts_popup"> \
+	help_page.innerHTML='	<div id="qvorak_shortcuts_curtain"></div> \
+				<div id="qvorak_shortcuts_popup"> \
 				<h1>Quora Shortcuts</h1> \
 				<p> \
 					<table>\
@@ -180,10 +180,10 @@ shortcut.add("Alt+T",function() {
 Toggle the help page at all times
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Shift+slash",function() {
-	if (document.getElementById("quorak_shortcuts_help").style.display == 'none') {
-		document.getElementById("quorak_shortcuts_help").style.display='inline-block';
+	if (document.getElementById("qvorak_shortcuts_help").style.display == 'none') {
+		document.getElementById("qvorak_shortcuts_help").style.display='inline-block';
 	} else {
-		document.getElementById("quorak_shortcuts_help").style.display='none';
+		document.getElementById("qvorak_shortcuts_help").style.display='none';
 	}
 },{
 	'type':	'keydown',
