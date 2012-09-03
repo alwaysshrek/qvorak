@@ -4,11 +4,14 @@ This extension adds keyboard shortcuts to your Quora.
 ###Global:
 * ? - show help
 
-###Dashboard:
-* / - search
+###Common Tasks :
+* / - Search
 * f - Follow/Unfollow a question
+* Alt+Z - Unfocus input fields.
 * Alt+Q - Add a question
 * Alt+P - Add a post
+
+###Navigation :
 * Alt+H - Go to Home
 * Alt+U - Go to Profile
 * Alt+N - Go to Notifications

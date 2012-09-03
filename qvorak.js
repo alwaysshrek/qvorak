@@ -62,6 +62,7 @@ function makeHelpPage () {
 							<tr> <td>?</td><td>Toggle Help Page.</td> </tr>\
 							<tr> <td>/</td><td>Focus the search box.</td> </tr>\
 							<tr> <td>f</td><td>Follow/Unfollow a question.</td> </tr>\
+							<tr> <td>Alt+Z</td><td>Unfocus the search box.</td> </tr>\
 							<tr> <td>Alt+Q</td><td>Add a question.</td> </tr>\
 							<tr> <td>Alt+P</td><td>Add a post.</td> </tr>\
 							<tr> <td>Alt+H</td><td>Go to Home.</td> </tr>\
@@ -231,6 +232,21 @@ shortcut.add("slash",function() {
 	'type':	'keydown',
 	'propagate': false,
 	'disable_in_input': true,
+	'target': document
+});
+
+
+
+//***UnFocus search box
+/*---------------------------------------------------------------------------------------
+Unfocus the search box
+---------------------------------------------------------------------------------------*/
+shortcut.add("Alt+Z",function() {
+	document.activeElement.blur();
+},{
+	'type':	'keydown',
+	'propagate': false,
+	'disable_in_input':false,
 	'target': document
 });
 
