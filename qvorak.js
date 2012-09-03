@@ -62,7 +62,7 @@ function makeHelpPage () {
 							<tr> <td>?</td><td>Toggle Help Page.</td> </tr>\
 							<tr> <td>/</td><td>Focus the search box.</td> </tr>\
 							<tr> <td>f</td><td>Follow/Unfollow a question.</td> </tr>\
-							<tr> <td>Alt+Z</td><td>Unfocus the search box.</td> </tr>\
+							<tr> <td>Alt+Z</td><td>Unfocus the input fields.</td> </tr>\
 							<tr> <td>Alt+Q</td><td>Add a question.</td> </tr>\
 							<tr> <td>Alt+P</td><td>Add a post.</td> </tr>\
 							<tr> <td>Alt+H</td><td>Go to Home.</td> </tr>\
