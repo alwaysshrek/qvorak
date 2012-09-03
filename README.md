@@ -17,6 +17,8 @@ This extension adds keyboard shortcuts to your Quora.
 * Alt+T - Go to Topics
 
 ## Changelog
+### ver 1.1
+* Updated both the icons.
 ### ver 1.0
-* initial release
+* Initial release.
 
