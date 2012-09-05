@@ -42,17 +42,19 @@
 
 #qvorak_shortcuts_popup h1, #qvorak_shortcuts_popup h2, #qvorak_shortcuts_popup p {
     color: white;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 #qvorak_shortcuts_popup h1 {
    color: #DD0;
-   text-align: left; 
-   font-weight: bold;
+   text-align: left;
+   font-size: 200%;
 }
 
 #qvorak_shortcuts_popup h2 {
-    margin-bottom: -15px;
+   margin-top: 25px;
+   margin-bottom: 10px;
+   font-size: 150%;
 }
 
 #qvorak_shortcuts_popup table tr td:first-child {

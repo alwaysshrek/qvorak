@@ -56,6 +56,7 @@ function makeHelpPage () {
 	help_page.innerHTML='	<div id="qvorak_shortcuts_curtain"></div> \
 				<div id="qvorak_shortcuts_popup"> \
 				<h1>Quora Shortcuts</h1> \
+				<h2>Common Tasks</h2> \
 				<p> \
 					<table>\
 						<tbody>\
@@ -63,14 +64,25 @@ function makeHelpPage () {
 							<tr> <td>/</td><td>Focus the search box.</td> </tr>\
 							<tr> <td>f</td><td>Follow/Unfollow a question.</td> </tr>\
 							<tr> <td>Alt+Z</td><td>Unfocus the input fields.</td> </tr>\
-							<tr> <td>Alt+Q</td><td>Add a question.</td> </tr>\
-							<tr> <td>Alt+P</td><td>Add a post.</td> </tr>\
+							<tr> <td>Alt+Q</td><td>Add a Question.</td> </tr>\
+							<tr> <td>Alt+P</td><td>Add a Post.</td> </tr>\
+						</tbody>\
+					</table>\
+				</p>\
+				<h2>Navigation</h2> \
+				<p> \
+					<table>\
+						<tbody>\
 							<tr> <td>Alt+H</td><td>Go to Home.</td> </tr>\
 							<tr> <td>Alt+U</td><td>Go to Profile.</td> </tr>\
 							<tr> <td>Alt+N</td><td>Go to Notifications.</td> </tr>\
 							<tr> <td>Alt+I</td><td>Go to Inbox.</td> </tr>\
 							<tr> <td>Alt+B</td><td>Go to Boards.</td> </tr>\
 							<tr> <td>Alt+T</td><td>Go to Topics.</td> </tr>\
+							<tr> <td>Alt+O</td><td>Go to Open questions.</td> </tr>\
+							<tr> <td>Alt+A</td><td>Go to A2A.</td> </tr>\
+							<tr> <td>Alt+D</td><td>Go to Drafts.</td> </tr>\
+							<tr> <td>Alt+V</td><td>Go to Views.</td> </tr>\
 						</tbody>\
 					</table>\
 				</p>\
@@ -84,6 +96,7 @@ function makeHelpPage () {
 
 getUserDetails();
 window.onload = makeHelpPage;
+
 
 //***Home
 /*---------------------------------------------------------------------------------------
@@ -203,6 +216,8 @@ shortcut.add("Alt+T",function() {
 	'target': document
 });
 
+
+
 //***Toggle Help
 /*---------------------------------------------------------------------------------------
 Toggle the help page at all times
@@ -216,7 +231,7 @@ shortcut.add("Shift+slash",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': false,
+	'disable_in_input': true,
 	'target': document
 });
 
@@ -239,7 +254,7 @@ shortcut.add("slash",function() {
 
 //***UnFocus search box
 /*---------------------------------------------------------------------------------------
-Unfocus the search box
+Unfocus the search/input boxes
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+Z",function() {
 	document.activeElement.blur();
@@ -270,6 +285,85 @@ shortcut.add("F",function() {
 	'disable_in_input': true,
 	'target': document
 });
+
+
+
+//***Goto Open Questions
+/*---------------------------------------------------------------------------------------
+Goto open questions
+---------------------------------------------------------------------------------------*/
+shortcut.add("Alt+O",function() {
+	if (window.location.href != 'http://www.quora.com/home/open') { window.location.href = 'http://www.quora.com/home/open'; }
+},{
+	'type':	'keydown',
+	'propagate': false,
+	'disable_in_input': true,
+	'target': document
+});
+
+
+
+//***Goto A2A
+/*---------------------------------------------------------------------------------------
+Goto A2A
+---------------------------------------------------------------------------------------*/
+shortcut.add("Alt+A",function() {
+	if (window.location.href != 'http://www.quora.com/asked_to_answer') { window.location.href = 'http://www.quora.com/asked_to_answer'; }
+},{
+	'type':	'keydown',
+	'propagate': false,
+	'disable_in_input': true,
+	'target': document
+});
+
+
+
+//***Goto saved Drafts
+/*---------------------------------------------------------------------------------------
+Goto saved Drafts
+---------------------------------------------------------------------------------------*/
+shortcut.add("Alt+D",function() {
+	if (window.location.href != 'http://www.quora.com/home/drafts') { window.location.href = 'http://www.quora.com/home/drafts'; }
+},{
+	'type':	'keydown',
+	'propagate': false,
+	'disable_in_input': true,
+	'target': document
+});
+
+
+
+//***Goto views
+/*---------------------------------------------------------------------------------------
+Goto views
+---------------------------------------------------------------------------------------*/
+shortcut.add("Alt+V",function() {
+	if (window.location.href != 'http://www.quora.com/views') { window.location.href = 'http://www.quora.com/views'; }
+},{
+	'type':	'keydown',
+	'propagate': false,
+	'disable_in_input': true,
+	'target': document
+});
+
+
+
+//***Answer a question
+/*---------------------------------------------------------------------------------------
+Focus the answer box if on a question's page
+---------------------------------------------------------------------------------------*/
+/*shortcut.add("A",function() {
+	if ( document.getElementsByClassName("question row").length != 0 ) {
+		var len = document.getElementsByClassName("pagedlist_item").length;
+		document.getElementsByClassName("pagedlist_item")[len-1].getElementsByClassName("qtext_editor_content qed_content")[0].focus();
+		scrollTo(document.getElementsByClassName("pagedlist_item")[len-1].getElementsByClassName("qtext_editor_content qed_content")[0]);
+	}
+},{
+	'type':	'keydown',
+	'propagate': false,
+	'disable_in_input': true,
+	'target': document
+});*/
 
 
 
