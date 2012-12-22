@@ -6,7 +6,7 @@ This extension adds keyboard shortcuts to your Quora.
 
 ###Common Tasks :
 * / - Search
-* f - Follow/Unfollow a question
+* Shift+Alt+F - Follow/Unfollow a question
 * Alt+Z - Unfocus input fields.
 * Alt+Q - Add a question
 * Alt+P - Add a post
@@ -22,8 +22,13 @@ This extension adds keyboard shortcuts to your Quora.
 * Alt+A - Go to A2A.
 * Alt+D - Go to Drafts.
 * Alt+V - Go to Views.
+* Alt+C - Go to Credits.
 
 ## Changelog
+### Ver 1.3
+* Changed the follow shortcut, since it was having issues due to single f.
+* Added the credits page shortcut.
+
 ### Ver 1.2
 * Fixed the question-mark-in-input-fields bug.
 * Added open questions, A2A, Drafts, Views shortcuts.

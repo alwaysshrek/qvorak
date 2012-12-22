@@ -62,7 +62,7 @@ function makeHelpPage () {
 						<tbody>\
 							<tr> <td>?</td><td>Toggle Help Page.</td> </tr>\
 							<tr> <td>/</td><td>Focus the search box.</td> </tr>\
-							<tr> <td>f</td><td>Follow/Unfollow a question.</td> </tr>\
+							<tr> <td>Shift+Alt+F</td><td>Follow/Unfollow a question.</td> </tr>\
 							<tr> <td>Alt+Z</td><td>Unfocus the input fields.</td> </tr>\
 							<tr> <td>Alt+Q</td><td>Add a Question.</td> </tr>\
 							<tr> <td>Alt+P</td><td>Add a Post.</td> </tr>\
@@ -83,6 +83,7 @@ function makeHelpPage () {
 							<tr> <td>Alt+A</td><td>Go to A2A.</td> </tr>\
 							<tr> <td>Alt+D</td><td>Go to Drafts.</td> </tr>\
 							<tr> <td>Alt+V</td><td>Go to Views.</td> </tr>\
+							<tr> <td>Alt+C</td><td>Go to Credits.</td> </tr>\
 						</tbody>\
 					</table>\
 				</p>\
@@ -271,7 +272,7 @@ shortcut.add("Alt+Z",function() {
 /*---------------------------------------------------------------------------------------
 Follow/unfollow on all times except when inside the search box itself, answer box or the comment box
 ---------------------------------------------------------------------------------------*/
-shortcut.add("F",function() {
+shortcut.add("Shift+Alt+F",function() {
 
 	if (document.getElementsByClassName("follow_button").length) {
 		document.getElementsByClassName("follow_button")[0].click();
@@ -347,6 +348,18 @@ shortcut.add("Alt+V",function() {
 });
 
 
+//***Goto credits
+/*---------------------------------------------------------------------------------------
+Goto credits
+---------------------------------------------------------------------------------------*/
+shortcut.add("Alt+C",function() {
+	if (window.location.href != 'http://www.quora.com/credits') { window.location.href = 'http://www.quora.com/credits'; }
+},{
+	'type':	'keydown',
+	'propagate': false,
+	'disable_in_input': true,
+	'target': document
+});
 
 //***Answer a question
 /*---------------------------------------------------------------------------------------
