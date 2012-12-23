@@ -108,7 +108,7 @@ shortcut.add("Alt+H",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -123,7 +123,7 @@ shortcut.add("Alt+Q",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -138,7 +138,7 @@ shortcut.add("Alt+P",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -153,7 +153,7 @@ shortcut.add("Alt+U",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -168,7 +168,7 @@ shortcut.add("Alt+N",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -183,7 +183,7 @@ shortcut.add("Alt+I",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -198,7 +198,7 @@ shortcut.add("Alt+B",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -213,7 +213,7 @@ shortcut.add("Alt+T",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -223,7 +223,7 @@ shortcut.add("Alt+T",function() {
 /*---------------------------------------------------------------------------------------
 Toggle the help page at all times
 ---------------------------------------------------------------------------------------*/
-shortcut.add("Shift+slash",function() {
+shortcut.add("Shift+Alt+slash",function() {
 	if (document.getElementById("qvorak_shortcuts_help").style.display == 'none') {
 		document.getElementById("qvorak_shortcuts_help").style.display='inline-block';
 	} else {
@@ -232,7 +232,7 @@ shortcut.add("Shift+slash",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -242,12 +242,12 @@ shortcut.add("Shift+slash",function() {
 /*---------------------------------------------------------------------------------------
 Focus on all times except when inside the search box itself, answer box or the comment box
 ---------------------------------------------------------------------------------------*/
-shortcut.add("slash",function() {
+shortcut.add("Alt+slash",function() {
 	document.getElementsByClassName("question_box")[0].focus();
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -283,7 +283,7 @@ shortcut.add("Shift+Alt+F",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -298,7 +298,7 @@ shortcut.add("Alt+O",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -313,7 +313,7 @@ shortcut.add("Alt+A",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -328,7 +328,7 @@ shortcut.add("Alt+D",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -343,7 +343,7 @@ shortcut.add("Alt+V",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -357,7 +357,7 @@ shortcut.add("Alt+C",function() {
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });
 
@@ -374,7 +374,7 @@ Focus the answer box if on a question's page
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });*/
 
@@ -403,7 +403,7 @@ When in the news feed, scroll next post one item at a time
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });*/
 
@@ -432,6 +432,6 @@ When in the news feed, scroll down one item at a time
 },{
 	'type':	'keydown',
 	'propagate': false,
-	'disable_in_input': true,
+	'disable_in_input': false,
 	'target': document
 });*/
