@@ -26,15 +26,15 @@ This extension adds keyboard shortcuts to your Quora.
 * Alt+S - Go to Account Settings.
 
 ## Changelog
-### Ver 1.3.2
+### Ver 1.3
 * Added support for https
 * Added shortcut to access account settings.
 
-### Ver 1.3.1
+### Ver 1.2.2
 * Changed single key shortcuts
 * Shortcuts now work everywhere, in input boxes too.
 
-### Ver 1.3
+### Ver 1.2.1
 * Changed the follow shortcut, since it was having issues due to single f.
 * Added the credits page shortcut.
 

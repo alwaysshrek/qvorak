@@ -7,7 +7,7 @@
         "128": "128.png"
     },
     "permissions": [
-        "http://*.quora.com/*"
+        "*://*.quora.com/*"
     ],
     "content_scripts": [
         {
