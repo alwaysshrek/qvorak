@@ -60,8 +60,8 @@ function makeHelpPage () {
 				<p> \
 					<table>\
 						<tbody>\
-							<tr> <td>?</td><td>Toggle Help Page.</td> </tr>\
-							<tr> <td>/</td><td>Focus the search box.</td> </tr>\
+							<tr> <td>Shift+Alt+?</td><td>Toggle Help Page.</td> </tr>\
+							<tr> <td>Alt+/</td><td>Focus the search box.</td> </tr>\
 							<tr> <td>Shift+Alt+F</td><td>Follow/Unfollow a question.</td> </tr>\
 							<tr> <td>Alt+Z</td><td>Unfocus the input fields.</td> </tr>\
 							<tr> <td>Alt+Q</td><td>Add a Question.</td> </tr>\

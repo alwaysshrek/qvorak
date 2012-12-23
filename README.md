@@ -2,10 +2,10 @@ This extension adds keyboard shortcuts to your Quora.
 
 ## Shortcuts 
 ###Global:
-* ? - show help
+* Shift+Alt+? - show help
 
 ###Common Tasks :
-* / - Search
+* Alt+/ - Search
 * Shift+Alt+F - Follow/Unfollow a question
 * Alt+Z - Unfocus input fields.
 * Alt+Q - Add a question
@@ -25,6 +25,10 @@ This extension adds keyboard shortcuts to your Quora.
 * Alt+C - Go to Credits.
 
 ## Changelog
+### Ver 1.3.1
+* Changed single key shortcuts
+* Shortcuts now work everywhere, in input boxes too.
+
 ### Ver 1.3
 * Changed the follow shortcut, since it was having issues due to single f.
 * Added the credits page shortcut.
