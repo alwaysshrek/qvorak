@@ -23,8 +23,13 @@ This extension adds keyboard shortcuts to your Quora.
 * Alt+D - Go to Drafts.
 * Alt+V - Go to Views.
 * Alt+C - Go to Credits.
+* Alt+S - Go to Account Settings.
 
 ## Changelog
+### Ver 1.3.2
+* Added support for https
+* Added shortcut to access account settings.
+
 ### Ver 1.3.1
 * Changed single key shortcuts
 * Shortcuts now work everywhere, in input boxes too.

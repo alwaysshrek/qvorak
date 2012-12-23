@@ -31,7 +31,7 @@ var response, user_link, post_counter=0;
 
 function getUserDetails () {
 	// sending request and getting response
-	ajax_transport.open("GET", "http://api.quora.com/api/logged_in_user?fields=link", true);
+	ajax_transport.open("GET", PROTOCOL + "//api.quora.com/api/logged_in_user?fields=link", true);
 	ajax_transport.onreadystatechange = function () {
 		'use strict';
 
@@ -84,6 +84,7 @@ function makeHelpPage () {
 							<tr> <td>Alt+D</td><td>Go to Drafts.</td> </tr>\
 							<tr> <td>Alt+V</td><td>Go to Views.</td> </tr>\
 							<tr> <td>Alt+C</td><td>Go to Credits.</td> </tr>\
+							<tr> <td>Alt+S</td><td>Go to Account Settings.</td> </tr>\
 						</tbody>\
 					</table>\
 				</p>\
@@ -95,6 +96,7 @@ function makeHelpPage () {
 
 /*************   MAIN STARTS   *************/
 
+var PROTOCOL=document.location.protocol;
 getUserDetails();
 window.onload = makeHelpPage;
 
@@ -104,7 +106,7 @@ window.onload = makeHelpPage;
 Go to Home
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+H",function() {
-	 if (window.location.href != 'http://www.quora.com/') { window.location.href = 'http://www.quora.com'; }
+	 if (window.location.href != PROTOCOL + '//www.quora.com/') { window.location.href = PROTOCOL + '//www.quora.com'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
@@ -119,7 +121,7 @@ shortcut.add("Alt+H",function() {
 Go to add a question
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+Q",function() {
-	 if (window.location.href != 'http://www.quora.com/question/add/') { window.location.href = 'http://www.quora.com/question/add'; }
+	 if (window.location.href != PROTOCOL + '//www.quora.com/question/add/') { window.location.href = PROTOCOL + '//www.quora.com/question/add'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
@@ -134,7 +136,7 @@ shortcut.add("Alt+Q",function() {
 Go to add a post
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+P",function() {
-	 if (window.location.href != 'http://www.quora.com/post/add/') { window.location.href = 'http://www.quora.com/post/add'; }
+	 if (window.location.href != PROTOCOL + '//www.quora.com/post/add/') { window.location.href = PROTOCOL + '//www.quora.com/post/add'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
@@ -164,7 +166,7 @@ shortcut.add("Alt+U",function() {
 Go to notifications
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+N",function() {
-	 if (window.location.href != 'http://www.quora.com/notifications/') { window.location.href = 'http://www.quora.com/notifications'; }
+	 if (window.location.href != PROTOCOL + '//www.quora.com/notifications/') { window.location.href = PROTOCOL + '//www.quora.com/notifications'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
@@ -179,7 +181,7 @@ shortcut.add("Alt+N",function() {
 Go to inbox
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+I",function() {
-	 if (window.location.href != 'http://www.quora.com/inbox/') { window.location.href = 'http://www.quora.com/inbox'; }
+	 if (window.location.href != PROTOCOL + '//www.quora.com/inbox/') { window.location.href = PROTOCOL + '//www.quora.com/inbox'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
@@ -278,6 +280,8 @@ shortcut.add("Shift+Alt+F",function() {
 		document.getElementsByClassName("follow_button")[0].click();
 	} else if (document.getElementsByClassName("unfollow_button").length) {
 		document.getElementsByClassName("unfollow_button")[0].click();
+	} else {
+		alert("Geez, nothing to follow/unfollow here.");
 	}
 
 },{
@@ -294,7 +298,7 @@ shortcut.add("Shift+Alt+F",function() {
 Goto open questions
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+O",function() {
-	if (window.location.href != 'http://www.quora.com/home/open') { window.location.href = 'http://www.quora.com/home/open'; }
+	if (window.location.href != PROTOCOL + '//www.quora.com/home/open') { window.location.href = PROTOCOL + '//www.quora.com/home/open'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
@@ -309,7 +313,7 @@ shortcut.add("Alt+O",function() {
 Goto A2A
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+A",function() {
-	if (window.location.href != 'http://www.quora.com/asked_to_answer') { window.location.href = 'http://www.quora.com/asked_to_answer'; }
+	if (window.location.href != PROTOCOL + '//www.quora.com/asked_to_answer') { window.location.href = PROTOCOL + '//www.quora.com/asked_to_answer'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
@@ -324,7 +328,7 @@ shortcut.add("Alt+A",function() {
 Goto saved Drafts
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+D",function() {
-	if (window.location.href != 'http://www.quora.com/home/drafts') { window.location.href = 'http://www.quora.com/home/drafts'; }
+	if (window.location.href != PROTOCOL + '//www.quora.com/home/drafts') { window.location.href = PROTOCOL + '//www.quora.com/home/drafts'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
@@ -339,7 +343,7 @@ shortcut.add("Alt+D",function() {
 Goto views
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+V",function() {
-	if (window.location.href != 'http://www.quora.com/views') { window.location.href = 'http://www.quora.com/views'; }
+	if (window.location.href != PROTOCOL + '//www.quora.com/views') { window.location.href = PROTOCOL + '//www.quora.com/views'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
@@ -353,13 +357,27 @@ shortcut.add("Alt+V",function() {
 Goto credits
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+C",function() {
-	if (window.location.href != 'http://www.quora.com/credits') { window.location.href = 'http://www.quora.com/credits'; }
+	if (window.location.href != PROTOCOL + '//www.quora.com/credits') { window.location.href = PROTOCOL + '//www.quora.com/credits'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
 	'disable_in_input': false,
 	'target': document
 });
+
+//***Goto settings
+/*---------------------------------------------------------------------------------------
+Goto settings
+---------------------------------------------------------------------------------------*/
+shortcut.add("Alt+S",function() {
+	if (window.location.href != PROTOCOL + '//www.quora.com/settings') { window.location.href = PROTOCOL + '//www.quora.com/settings'; }
+},{
+	'type':	'keydown',
+	'propagate': false,
+	'disable_in_input': false,
+	'target': document
+});
+
 
 //***Answer a question
 /*---------------------------------------------------------------------------------------
@@ -387,9 +405,9 @@ When in the news feed, scroll next post one item at a time
 /*shortcut.add("J",function() {
 
 	if ( 
-		(window.location.href == 'http://www.quora.com/') || 
-		(window.location.href == 'http://www.quora.com/recent') ||
-		(window.location.href.search('http://www.quora.com/#') != -1)
+		(window.location.href == PROTOCOL + '//www.quora.com/') || 
+		(window.location.href == PROTOCOL + '//www.quora.com/recent') ||
+		(window.location.href.search(PROTOCOL + '//www.quora.com/#') != -1)
 	   ) {
 		if ( posts_array[post_counter].style.display != 'none' ) {
 			console.log("Will scroll next post.");
@@ -416,9 +434,9 @@ When in the news feed, scroll down one item at a time
 /*shortcut.add("K",function() {
 
 	if ( 
-		(window.location.href == 'http://www.quora.com/') || 
-		(window.location.href == 'http://www.quora.com/recent') ||
-		(window.location.href.search('http://www.quora.com/#') != -1)
+		(window.location.href == PROTOCOL + '//www.quora.com/') || 
+		(window.location.href == PROTOCOL + '//www.quora.com/recent') ||
+		(window.location.href.search(PROTOCOL + '//www.quora.com/#') != -1)
 	   ) {
 		if ( posts_array[post_counter].style.display != 'none' ) {
 			console.log("Will scroll previous post.");
