@@ -16,16 +16,22 @@ This extension adds keyboard shortcuts to your Quora.
 * Alt+U - Go to Profile.
 * Alt+N - Go to Notifications.
 * Alt+I - Go to Inbox.
-* Alt+B - Go to Boards.
+* Alt+B - Go to Blogs.
 * Alt+T - Go to Topics.
 * Alt+O - Go to Open questions.
 * Alt+A - Go to A2A.
 * Alt+D - Go to Drafts.
-* Alt+V - Go to Views.
+* Alt+V - Go to Stats.
 * Alt+C - Go to Credits.
 * Alt+S - Go to Account Settings.
 
 ## Changelog
+### Ver 1.3.1
+* Changes for focus search box based on changed design by Quora
+* Boards are now named 'blogs' in the Alt+B shorcut.
+* Changed the link for 'Open questions'
+* Views has changed to stats, changed the link for the same.
+
 ### Ver 1.3
 * Added support for https
 * Added shortcut to access account settings.

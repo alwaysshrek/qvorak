@@ -77,12 +77,12 @@ function makeHelpPage () {
 							<tr> <td>Alt+U</td><td>Go to Profile.</td> </tr>\
 							<tr> <td>Alt+N</td><td>Go to Notifications.</td> </tr>\
 							<tr> <td>Alt+I</td><td>Go to Inbox.</td> </tr>\
-							<tr> <td>Alt+B</td><td>Go to Boards.</td> </tr>\
+							<tr> <td>Alt+B</td><td>Go to Blogs.</td> </tr>\
 							<tr> <td>Alt+T</td><td>Go to Topics.</td> </tr>\
 							<tr> <td>Alt+O</td><td>Go to Open questions.</td> </tr>\
 							<tr> <td>Alt+A</td><td>Go to A2A.</td> </tr>\
 							<tr> <td>Alt+D</td><td>Go to Drafts.</td> </tr>\
-							<tr> <td>Alt+V</td><td>Go to Views.</td> </tr>\
+							<tr> <td>Alt+V</td><td>Go to Stats.</td> </tr>\
 							<tr> <td>Alt+C</td><td>Go to Credits.</td> </tr>\
 							<tr> <td>Alt+S</td><td>Go to Account Settings.</td> </tr>\
 						</tbody>\
@@ -191,12 +191,12 @@ shortcut.add("Alt+I",function() {
 
 
 
-//***Go to all boards
+//***Go to all blogs
 /*---------------------------------------------------------------------------------------
-Go to all your boards except when in input mode
+Go to all your blogs except when in input mode
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+B",function() {
-	 if (window.location.href != (user_link + '/boards')) { window.location.href = user_link + '/boards'; }
+	 if (window.location.href != (user_link + '/blogs')) { window.location.href = user_link + '/blogs'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
@@ -245,7 +245,8 @@ shortcut.add("Shift+Alt+slash",function() {
 Focus on all times except when inside the search box itself, answer box or the comment box
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+slash",function() {
-	document.getElementsByClassName("question_box")[0].focus();
+	//*Quora changed the element name and design*/ document.getElementsByClassName("question_box")[0].focus();
+	document.getElementsByName("search_input")[0].focus();
 },{
 	'type':	'keydown',
 	'propagate': false,
@@ -298,7 +299,7 @@ shortcut.add("Shift+Alt+F",function() {
 Goto open questions
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+O",function() {
-	if (window.location.href != PROTOCOL + '//www.quora.com/home/open') { window.location.href = PROTOCOL + '//www.quora.com/home/open'; }
+	if (window.location.href != PROTOCOL + '//www.quora.com/open_questions') { window.location.href = PROTOCOL + '//www.quora.com/open_questions'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
@@ -338,12 +339,12 @@ shortcut.add("Alt+D",function() {
 
 
 
-//***Goto views
+//***Goto Stats
 /*---------------------------------------------------------------------------------------
-Goto views
+Goto Stats
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+V",function() {
-	if (window.location.href != PROTOCOL + '//www.quora.com/views') { window.location.href = PROTOCOL + '//www.quora.com/views'; }
+	if (window.location.href != PROTOCOL + '//www.quora.com/stats') { window.location.href = PROTOCOL + '//www.quora.com/stats'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
