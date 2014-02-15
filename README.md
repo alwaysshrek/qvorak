@@ -26,7 +26,7 @@ This extension adds keyboard shortcuts to your Quora.
 * Alt+S - Go to Account Settings.
 
 ## Changelog
-### Ver 1.3.1
+### Ver 1.7
 * Changes for focus search box based on changed design by Quora
 * Boards are now named 'blogs' in the Alt+B shorcut.
 * Changed the link for 'Open questions'

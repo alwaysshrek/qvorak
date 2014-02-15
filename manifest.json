@@ -1,7 +1,7 @@
 {
     "name": "Qvorak",
     "description": "Access Quora functions from the keyboard",
-    "version": "1.3",
+    "version": "1.7",
     "icons": {
         "48" : "48.png",
         "128": "128.png"
