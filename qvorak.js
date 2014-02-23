@@ -85,6 +85,7 @@ function makeHelpPage () {
 							<tr> <td>Alt+V</td><td>Go to Stats.</td> </tr>\
 							<tr> <td>Alt+C</td><td>Go to Credits.</td> </tr>\
 							<tr> <td>Alt+S</td><td>Go to Account Settings.</td> </tr>\
+							<tr> <td>Shift+Alt+N</td><td>Click "clear notifications".</td> </tr>\
 						</tbody>\
 					</table>\
 				</p>\
@@ -166,7 +167,7 @@ shortcut.add("Alt+U",function() {
 Go to notifications
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+N",function() {
-	 if (window.location.href != PROTOCOL + '//www.quora.com/notifications/') { window.location.href = PROTOCOL + '//www.quora.com/notifications'; }
+	 if (window.location.href != PROTOCOL + '//www.quora.com/notifications') { window.location.href = PROTOCOL + '//www.quora.com/notifications'; }
 },{
 	'type':	'keydown',
 	'propagate': false,
@@ -372,6 +373,28 @@ Goto settings
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+S",function() {
 	if (window.location.href != PROTOCOL + '//www.quora.com/settings') { window.location.href = PROTOCOL + '//www.quora.com/settings'; }
+},{
+	'type':	'keydown',
+	'propagate': false,
+	'disable_in_input': false,
+	'target': document
+});
+
+//***Clear notifications
+/*---------------------------------------------------------------------------------------
+Clear notifications
+---------------------------------------------------------------------------------------*/
+shortcut.add("Shift+Alt+N",function() {
+	if (window.location.href == PROTOCOL + '//www.quora.com/notifications') { 
+		var clr_notif_button=document.getElementsByClassName("submit_button")[1];
+
+		if (clr_notif_button != undefined) { clr_notif_button.click();}
+		else { alert("Geez, no notifications to clear here.");}
+	}
+	else if (window.location.href != PROTOCOL + '//www.quora.com/notifications') { 
+		window.location.href = PROTOCOL + '//www.quora.com/notifications'; 
+		document.getElementsByClassName("submit_button")[1].click(); 
+	}
 },{
 	'type':	'keydown',
 	'propagate': false,

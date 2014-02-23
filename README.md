@@ -10,6 +10,7 @@ This extension adds keyboard shortcuts to your Quora.
 * Alt+Z - Unfocus input fields.
 * Alt+Q - Add a question
 * Alt+P - Add a post
+* Shift+Alt+N - Clear notifications.
 
 ###Navigation :
 * Alt+H - Go to Home.
@@ -26,6 +27,8 @@ This extension adds keyboard shortcuts to your Quora.
 * Alt+S - Go to Account Settings.
 
 ## Changelog
+### Ver 1.7.1
+* Added clear notifications feature.
 ### Ver 1.7
 * Changes for focus search box based on changed design by Quora
 * Boards are now named 'blogs' in the Alt+B shorcut.
