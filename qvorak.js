@@ -62,7 +62,7 @@ function makeHelpPage () {
 						<tbody>\
 							<tr> <td>Shift+Alt+?</td><td>Toggle Help Page.</td> </tr>\
 							<tr> <td>Alt+/</td><td>Focus the search box.</td> </tr>\
-							<tr> <td>Shift+Alt+F</td><td>Follow/Unfollow a question.</td> </tr>\
+							<tr> <td>Alt+W</td><td>Want answers to question.</td> </tr>\
 							<tr> <td>Alt+Z</td><td>Unfocus the input fields.</td> </tr>\
 							<tr> <td>Alt+Q</td><td>Add a Question.</td> </tr>\
 							<tr> <td>Alt+P</td><td>Add a Post.</td> </tr>\
@@ -272,16 +272,16 @@ shortcut.add("Alt+Z",function() {
 
 
 
-//***Question - Follow/Unfollow it
+//***Question - Want answers
 /*---------------------------------------------------------------------------------------
-Follow/unfollow on all times except when inside the search box itself, answer box or the comment box
+Activates the want answers button when on a certain question page.
 ---------------------------------------------------------------------------------------*/
-shortcut.add("Shift+Alt+F",function() {
+shortcut.add("Alt+W",function() {
 
-	if (document.getElementsByClassName("follow_button").length) {
-		document.getElementsByClassName("follow_button")[0].click();
-	} else if (document.getElementsByClassName("unfollow_button").length) {
-		document.getElementsByClassName("unfollow_button")[0].click();
+	if (document.getElementsByClassName("follow_button questionFollowAction").length) {
+		document.getElementsByClassName("follow_button questionFollowAction")[0].click();
+	} else if (document.getElementsByClassName("unfollow_button questionFollowAction").length) {
+		document.getElementsByClassName("unfollow_button questionFollowAction")[0].click();
 	} else {
 		alert("Geez, nothing to follow/unfollow here.");
 	}
