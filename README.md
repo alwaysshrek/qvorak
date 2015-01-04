@@ -6,7 +6,7 @@ This extension adds keyboard shortcuts to your Quora.
 
 ###Common Tasks :
 * Alt+/ - Search
-* Shift+Alt+F - Follow/Unfollow a question
+* Alt+W - Want answers to a question
 * Alt+Z - Unfocus input fields.
 * Alt+Q - Add a question
 * Alt+P - Add a post
@@ -27,6 +27,10 @@ This extension adds keyboard shortcuts to your Quora.
 * Alt+S - Go to Account Settings.
 
 ## Changelog
+### Ver 1.7.3
+* As per the new quora website design, fixed the broken 'Add Question' shortcut.
+### Ver 1.7.2
+* As per the new quora website design, Changed the shortcut to ‘Alt+W’ as well from ‘Shift+Alt+F’.
 ### Ver 1.7.1
 * Added clear notifications feature.
 ### Ver 1.7

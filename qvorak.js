@@ -122,7 +122,9 @@ shortcut.add("Alt+H",function() {
 Go to add a question
 ---------------------------------------------------------------------------------------*/
 shortcut.add("Alt+Q",function() {
-	 if (window.location.href != PROTOCOL + '//www.quora.com/question/add/') { window.location.href = PROTOCOL + '//www.quora.com/question/add'; }
+	if (document.getElementsByClassName("AddQuestionDialogButton AddQuestionFromHeaderDialogButton").length) {
+		document.getElementsByClassName("AddQuestionDialogButton AddQuestionFromHeaderDialogButton")[0].click();
+	}
 },{
 	'type':	'keydown',
 	'propagate': false,
