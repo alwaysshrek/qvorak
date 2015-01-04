@@ -1,6 +1,7 @@
-# Excluded directories #
+# Excluded files/directories #
 ########################
 tmp
+qvorak.zip
 
 # Compiled source #
 ###################

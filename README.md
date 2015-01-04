@@ -27,6 +27,8 @@ This extension adds keyboard shortcuts to your Quora.
 * Alt+S - Go to Account Settings.
 
 ## Changelog
+### Ver 1.8
+* Ready for extension update
 ### Ver 1.7.3
 * As per the new quora website design, fixed the broken 'Add Question' shortcut.
 ### Ver 1.7.2
